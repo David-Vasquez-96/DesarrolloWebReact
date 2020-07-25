@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {AppBar, Toolbar, Typography, Grid, Container, CssBaseline, Box} from '@material-ui/core';
+import ContadorClass from './ContadorClass'
+import ContadorFunction from './ContadorFunction'
+import ContadorFuncion from './ContadorFunction';
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
@@ -42,6 +45,7 @@ export default function HomePage() {
               </Toolbar>
             </AppBar>      
             <Clock />
+            <ContadorClass />
         </div>
     )
 }
